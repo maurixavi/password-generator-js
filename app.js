@@ -69,7 +69,7 @@
 
     function btnToggle(element) {
         element.classList.toggle('false');
-        element.childNodes[0].classList.toggle('fa-check'); //accede a <i class="fas fa-check"></i>
+        element.childNodes[0].classList.toggle('fa-check'); 
         element.childNodes[0].classList.toggle('fa-times');
     }
 
@@ -89,13 +89,11 @@
         }
         
         passCharacters = passCharacters.trim().split(' ');
-        console.log(passCharacters);
 
         for (let i = 0; i < config.length; i++) {
             var randomPos = Math.floor(Math.random() * passCharacters.length);
             password += passCharacters[randomPos]
         }
-        //console.log(password);
 
         app.elements.namedItem('password-input').value = password;
         console.log(app.elements.namedItem('password-input').value);
