@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Password Generator <i class="fas fa-key"></i></h1>
+        </div>
+        <form action="" class="app" id="app">
+            <div class="row password-length">
+                <div class="col">
+                    <label for="password-length">Password length</label>
+                </div>
+                <div class="col buttons">
+                    <div>
+                        <button class="btn" id="btn-decrease"><i class="fas fa-minus"></i></button>
+                    </div>
+                    <div>
+                        <input type="text" id="password-length" readonly value="8">
+                    </div>
+                    <div class="col">
+                        <button class="btn" id="btn-increase"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row include-symbols">
+                <div class="col">
+                    <label for="include-symbols">Include Symbols?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-symbols"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+
+
+            <div class="row include-numbers">
+                <div class="col">
+                    <label for="include-numbers">Include Numbers?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-numbers"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+
+
+            <div class="row include-uppercase">
+                <div class="col">
+                    <label for="include-uppercase">Include Uppercase Characters?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-uppercase"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+
+            <div class="row generate">
+                <div class="col">
+                    <button class="btn btn-generate" id="btn-generate">Generate <i class="fas fa-lock"></i> </button>
+                </div>
+
+                <div class="col">
+                    <input type="text" class="password-input" id="password-input" readonly value="0e#S/Da9">
+                </div>
+            </div>
+
+            <div class="row alert">
+                <div class="col">
+                    <div class="copied-alert" id="copied-alert">
+                        <p><i class="fas fa-copy"></i> Password Copied</p>
+                    </div>
+                </div>
+            </div> 
+
+        </form>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
