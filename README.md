@@ -10,4 +10,4 @@ This is a customizable password generator developed with vanilla JavaScript. Wit
 
 ![Screenshot](password-generator-sample.png)
 
-You can access this customizable password generator online by visiting the following link: [Customizable Password Generator](https://customizedpasswordgenerator.netlify.app/).
+You can access this customizable password generator online by visiting the following link: [Customizable Password Generator](https://customizablepasswordgenerator.netlify.app/).
